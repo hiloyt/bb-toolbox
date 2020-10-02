@@ -1,5 +1,7 @@
 FROM alpine:3.12.0
 
+ARG YQ_VER=3.4.0
+
 RUN echo "@community https://nl.alpinelinux.org/alpine/v3.12/community" >> /etc/apk/repositories \
  && apk -U upgrade \
  && apk add openssl \
